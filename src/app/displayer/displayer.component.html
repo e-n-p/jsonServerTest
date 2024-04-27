@@ -1,0 +1,52 @@
+<p>displayer works!</p>
+
+<div class="userContainer" *ngIf="userList$ | async as userList">
+    <div *ngFor="let user of userList">
+        <p>id: {{user.id}}</p>
+        <p>Name: {{user.name}}</p>
+        <p>Email: {{user.email}}</p>
+        <p>Points: {{user.points}}</p>
+        <p>Amount recycled: {{user.totalUnitsRecycled}}</p>
+        <button (click)="delete(user.id)">Delete user</button>
+        <hr>
+    </div>
+</div>
+<div></div>
+
+<div class="binContainer" *ngIf="binList$ | async as binList">
+    <div *ngFor="let bin of binList">
+        <p>bin id: {{bin.id}}</p>
+        <p>County: {{bin.county}}</p>
+        <p>Address: {{bin.Address}}</p>
+        <p>Type: {{bin.type}}</p>
+        <p>co-ordinates: {{bin.coOrdinates}}</p>
+        <hr>
+    </div>
+</div>
+
+<form #newUserForm="ngForm" (ngSubmit)="onSubmit()">
+    <div>
+        <fieldset>
+            <label for="userId">Id: </label>
+            <input id="ident" name="userId" type="text" [(ngModel)]="this.newUser.id" required>
+        </fieldset>
+        <fieldset>
+            <label for="userName">Name: </label>
+            <input id="name" name="userName" type="text" [(ngModel)]="this.newUser.name" required>
+        </fieldset>
+        <fieldset>
+            <label for="userEmail">Email: </label>
+            <input id="email" name="userEmail" type="email" [(ngModel)]="this.newUser.email" email required>
+        </fieldset>
+        <fieldset>
+            <label for="userPoints">Points: </label>
+            <input id="points" name="userPoints" type="number" [(ngModel)]="this.newUser.points" required>
+        </fieldset>
+        <fieldset>
+            <label for="recycleCount">Recycle Count: </label>
+            <input id="recycleCount" name="recycleCount" type="number" [(ngModel)]="this.newUser.totalUnitsRecycled" required>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+<button type="update" (click)="update()">Update</button>

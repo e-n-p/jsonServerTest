@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Bruce Wayne",
+      "email": "BruceWayne@batman.com",
+      "points": 300,
+      "totalUnitsRecycled": 30
+    },
+    {
+      "id": "2",
+      "name": "Oliver Queen",
+      "email": "ollyQ@arrow.com",
+      "points": 433,
+      "totalUnitsRecycled": 32
+    },
+    {
+      "id": "3",
+      "name": "not Wally",
+      "email": "not@wally.com",
+      "points": 11,
+      "totalUnitsRecycled": 6
+    },
+    {
+      "id": "5",
+      "name": "Diana Prince",
+      "email": "amazon@warrior.com",
+      "points": 9999,
+      "totalUnitsRecycled": 9999
+    },
+    {
+      "id": "95cf",
+      "name": "",
+      "email": "",
+      "points": 100,
+      "totalUnitsRecycled": 100
+    }
+  ],
+  "bins": [
+    {
+      "id": "abc1",
+      "county": "Metropolis",
+      "Address": "33 kent Street",
+      "type": "glass",
+      "coOrdinates": "43.838632,-0.577882"
+    },
+    {
+      "id": "efg2",
+      "county": "Gotham",
+      "Address": "439 Wayne Estate",
+      "type": "battery",
+      "coOrdinates": "43.838632,-0.577882"
+    },
+    {
+      "id": "ijk3",
+      "county": "Anthens",
+      "Address": "12 Princess Creak Street",
+      "type": "plastic",
+      "coOrdinates": "43.838632,-0.577882"
+    }
+  ]
+}

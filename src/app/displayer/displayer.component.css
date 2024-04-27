@@ -1,0 +1,13 @@
+.userContainer {
+    border-width: 1px;
+    border-color: black;
+    border-style: dashed;
+    width: 50%;
+}
+
+.binContainer {
+    border-width: 1px;
+    border-color: black;
+    border-style: dashed;
+    width: 50%;
+}
